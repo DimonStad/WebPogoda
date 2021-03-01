@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Стадницкий Дмитрий M33081</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body onresize="buttonwith()" onload="buttonwith()">
+
+    <header>
+        <h1 id="weatherhere">Погода здесь</h1>
+        <button id="locationburron">Обновить геолокацию</button>
+    </header>
+    <main>
+            <section id="spb">
+                <h2 id="currentlocation">Saint Petersburg</h2>
+                <img id="currentlocationicon" src="image/sunny.png">
+                <p id="currentgrad">5°C</p>
+                <ul id="contain">
+                    <li class="wind">
+                        <p class="hh">Ветер</p>
+                        <p>4 м/с</p>
+                    </li>
+                    <li class="wind">
+                        <p class="hh">Облачность</p>
+                        <p>Ясно</p>
+                    </li>
+                    <li class="wind">
+                        <p class="hh">Давление</p>
+                        <p>761 мм. р.</p>
+                    </li>
+                    <li class="wind">
+                        <p class="hh">Влажность</p>
+                        <p>80%</p>
+                    </li>
+                    <li class="wind">
+                        <p class="hh">Координаты</p>
+                        <p>60.000° с. ш. и 30.300° в. д.</p>
+                    </li>
+                </ul>
+            </section>
+            <div id="addcity">
+                <h2 id="mycities">Избранное</h2>
+                <div id="plus">
+                    <button id="plusplus">+</button>
+                    <label style="margin-right: 4%">
+                        <input placeholder="Введите название города">
+                    </label>
+                </div>
+            </div>
+            <section id="othercities">
+                <div class="otherweather">
+                    <h3 class="nameofothercity">Moscow</h3>
+                    <p class="graofothercity">2°C</p>
+                    <img class="othercityicon" src="image/oblachno.png">
+                    <button class="x">×</button>
+                    <ul class="details">
+                        <li class="wind">
+                            <p class="hh">Ветер</p>
+                            <p>7 м/с</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Облачность</p>
+                            <p>Облачно</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Давление</p>
+                            <p>752 мм. р.</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Влажность</p>
+                            <p>75%</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Координаты</p>
+                            <p>55.800° с. ш. и 37.600° в.</p>
+                        </li>
+                    </ul>
+                </div>
+                <section class="otherweather">
+                    <h3 class="nameofothercity">Irkutsk</h3>
+                    <p class="graofothercity">-16°C</p>
+                    <img class="othercityicon" src="image/miniOblachno.png">
+                    <button class="x">×</button>
+                    <ul class="details">
+                        <li class="wind">
+                            <p class="hh">Ветер</p>
+                            <p>1 м/с</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Облачность</p>
+                            <p>Ясно, переменная облачность</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Давление</p>
+                            <p>714 мм. р.</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Влажность</p>
+                            <p>63%</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Координаты</p>
+                            <p>52°17.8668′ с. ш. и 104°17.7834′ в.</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="otherweather">
+                    <h3 class="nameofothercity">Krasnoyarsk</h3>
+                    <p class="graofothercity">-16°C</p>
+                    <img class="othercityicon" src="image/oblachno.png">
+                    <button class="x">×</button>
+                    <ul class="details">
+                        <li class="wind">
+                            <p class="hh">Ветер</p>
+                            <p>3 м/с</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Облачность</p>
+                            <p>Облачно</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Давление</p>
+                            <p>741 мм. р.</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Влажность</p>
+                            <p>82%</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Координаты</p>
+                            <p>56°00′43″ с. ш. 92°52′17″ в. д.</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="otherweather">
+                    <h3 class="nameofothercity">Tulun</h3>
+                    <p class="graofothercity">-17</p>
+                    <img class="othercityicon" src="image/sunny.png">
+                    <button class="x">×</button>
+                    <ul class="details">
+                        <li class="wind">
+                            <p class="hh">Ветер</p>
+                            <p>2 м/с</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Облачность</p>
+                            <p>Ясно</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Давление</p>
+                            <p>752 мм. р.</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Влажность</p>
+                            <p>78%</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Координаты</p>
+                            <p>54°34′00″ с. ш. 100°34′00″ в. д.</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="otherweather">
+                    <h3 class="nameofothercity">Ekaterinburg</h3>
+                    <p class="graofothercity">-17°C</p>
+                    <img class="othercityicon" src="image/miniOblachno.png">
+                    <button class="x">×</button>
+                    <ul class="details">
+                        <li class="wind">
+                            <p class="hh">Ветер</p>
+                            <p>0 м/с</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Облачность</p>
+                            <p>Облачно</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Давление</p>
+                            <p>733 мм. р.</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Влажность</p>
+                            <p>79%</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Координаты</p>
+                            <p>56°49′00″ с. ш. 60°34′00″ в. д</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="otherweather">
+                    <h2 class="nameofothercity">Novosibirsk</h2>
+                    <h2 class="graofothercity">-9°C</h2>
+                    <img class="othercityicon" src="image/snow_light.png">
+                    <button class="x">×</button>
+                    <ul class="details">
+                        <li class="wind">
+                            <p class="hh">Ветер</p>
+                            <p>3 м/с</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Облачность</p>
+                            <p>Небольшой снег</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Давление</p>
+                            <p>711 мм. р.</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Влажность</p>
+                            <p>83%</p>
+                        </li>
+                        <li class="wind">
+                            <p class="hh">Координаты</p>
+                            <p>55°1′00″ с. ш. 82°55′00″ в. д</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+    </main>
+</body>
+</html>

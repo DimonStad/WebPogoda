@@ -1,0 +1,328 @@
+@media screen {
+    html {
+        height: 100%;
+
+    }
+
+    header{
+        width: 100%;
+        margin: 0;
+    }
+
+    body {
+        background-color: #b1d3f2;
+        padding: 4%;
+        display: grid;
+    }
+
+    #spb {
+        display: block;
+        width: 100%;
+    }
+
+    #weatherhere {
+        font-size: 5vmin;
+        display: inline;
+    }
+
+    #currentlocation {
+        font-size: 5vmin;
+    }
+
+
+    #locationburron {
+        display: inline;
+        font-size: 2vmin;
+        margin-left: 30%;
+        background-color: silver;
+        padding: 1%;
+        border-radius: 20px;
+    }
+
+    #currentlocationicon {
+        width: 7vmax;
+        height: 7vmax;
+    }
+
+    #currentgrad {
+        display: inline;
+        font-size: 12vmax;
+        margin-left: 5%;
+        float: none;
+    }
+
+    #contain {
+        float: right;
+        font-size: 75%;
+        color: white;
+        width: 50%;
+    }
+
+    .wind {
+        background-color: gray;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        height: 2vmax;
+        list-style-type: none;
+    }
+
+    .hh {
+        display: inline;
+        font-size: 1.5vmax;
+        float: left;
+        margin: 0;
+        vertical-align: center;
+    }
+
+
+    p {
+        display: inline;
+        margin: 0;
+        float: right;
+        font-size: 1.5vmax;
+        vertical-align: center;
+    }
+
+    #mycities {
+        display: inline;
+        text-align: left;
+        font-size: 3vmax;
+        vertical-align: top;
+
+    }
+
+    #plus {
+        display: inline;
+        float: right;
+        font-size: 4vmin;
+        width: 60%;
+        margin-bottom: 0;
+    }
+
+    #plusplus {
+        display: inline;
+        float: right;
+        background-color: gray;
+        border-radius: 50%;
+        width: 4vmax;
+        height: 4vmax;
+        font-size: 1.5vmax;
+        color: white;
+    }
+
+    .otherweather {
+        display: inline;
+        width: 100%;
+        float: left;
+        margin-top: 3em;
+    }
+
+    .x {
+        display: inline;
+        float: right;
+        background-color: gray;
+        border-radius: 50%;
+        width: 2.7em;
+        height: 2.7em;
+        font-size: 1.5vmax;
+        color: white;
+    }
+
+    #othercities {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5vmax;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        height: 100%;
+    }
+
+    body {
+        padding: 2%;
+        background-color: #dbdbdb;
+    }
+
+    #spb {
+        display: block;
+        width: 100%;
+    }
+
+    #weatherhere {
+        font-size: 5vmin;
+        display: inline;
+    }
+
+    #currentlocation {
+        font-size: 5vmin;
+    }
+
+
+    #locationburron {
+        display: inline;
+        font-size: 2.5vmin;
+        background-color: silver;
+        padding: 1%;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    #currentlocationicon {
+        width: 20vmin;
+        height: 20vmin;
+        margin-left: 5%;
+    }
+
+    #currentgrad {
+        display: inline;
+        font-size: 20vmin;
+        margin-left: 20%;
+        vertical-align: top;
+        float: none;
+    }
+
+    #contain {
+        float: right;
+        font-size: 75%;
+        color: #ffffff;
+        width: 100%;
+    }
+
+    .wind {
+        background-color: gray;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        height: 4vmin;
+        list-style-type: none;
+    }
+
+    .hh {
+        display: inline;
+        font-size: 3vmin;
+        float: left;
+        margin: 0;
+        vertical-align: center;
+    }
+
+
+    p {
+        display: inline;
+        margin: 0;
+        float: right;
+        font-size: 3vmin;
+        vertical-align: center;
+    }
+
+    #mycities {
+        margin-top: 1.2em;
+        display: inline;
+        float: left;
+        font-size: 5vmin;
+    }
+
+    #plus {
+        margin-top: 1.2em;
+        display: inline;
+        float: right;
+        font-size: 4vmin;
+        width: 60%;
+    }
+
+    #plusplus {
+        display: inline;
+        float: right;
+        background-color: gray;
+        border-radius: 50%;
+        width: 6vmin;
+        height: 6vmin;
+        font-size: 70%;
+        color: white;
+    }
+
+    .otherweather {
+        width: 100%;
+        float: left;
+    }
+
+    .x {
+        display: inline;
+        float: right;
+        background-color: gray;
+        border-radius: 50%;
+        width: 6vmin;
+        height: 6vmin;
+        font-size: 1.5vmax;
+        color: white;
+        margin-top: 2%;
+    }
+
+    #othercities {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+}
+
+input {
+    font-size: 2vmin;
+    width: 50%;
+    padding: 2%;
+    float: right;
+    margin-right: 10%;
+}
+
+.nameofothercity {
+    display: inline;
+    font-size: 3vmax;
+}
+
+.graofothercity {
+    display: inline;
+    margin-left: 2vmax;
+    font-size: 3.5vmax;
+    float: none;
+}
+
+.othercityicon {
+    width: 3vmax;
+    height: 3vmax;
+    margin-left: 1vmax;
+}
+
+
+.details {
+    width: 100%;
+    float: left;
+    font-size: 75%;
+    color: white;
+}
+
+#reloadicon {
+    width: 3vmax;
+    height: 3vmax;
+
+}
+
+main {
+    display: grid;
+    width: 100%;
+}
+
+
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#addcity {
+    margin-top: 3em;
+}
+
+
+
