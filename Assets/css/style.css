@@ -12,6 +12,7 @@
     body {
         background-color: #b1d3f2;
         padding: 4%;
+        font-family: 'Jura', sans-serif;
         display: grid;
     }
 
@@ -37,11 +38,27 @@
         background-color: silver;
         padding: 1%;
         border-radius: 20px;
+
     }
 
+    #locationburron:hover {
+        background-color: gold;
+    }
+
+     
+    button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+    button:hover {
+        background-color: gold;
+        
+    }
     #currentlocationicon {
-        width: 7vmax;
-        height: 7vmax;
+        width: 8vmax;
+        height: 8vmax;
     }
 
     #currentgrad {
@@ -111,6 +128,10 @@
         color: white;
     }
 
+    #plusplus:hover{
+        background-color: gold;
+    }
+
     .otherweather {
         display: inline;
         width: 100%;
@@ -146,6 +167,7 @@
     body {
         padding: 2%;
         background-color: #b1d3f2;
+        font-family: 'Jura', sans-serif;
     }
 
     #spb {
@@ -170,6 +192,21 @@
         padding: 1%;
         border-radius: 20px;
         text-align: center;
+    }
+
+    #locationburron:hover {
+        background-color: gold;
+    }
+
+    button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+    button:hover {
+        background-color: gold;
+        
     }
 
     #currentlocationicon {
