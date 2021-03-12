@@ -145,7 +145,7 @@
 
     body {
         padding: 2%;
-        background-color: #dbdbdb;
+        background-color: #b1d3f2;
     }
 
     #spb {
@@ -253,6 +253,7 @@
     .x {
         display: inline;
         float: right;
+  
         background-color: gray;
         border-radius: 50%;
         width: 6vmin;
