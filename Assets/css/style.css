@@ -10,7 +10,7 @@
     }
 
     body {
-        background-color: #b1d3f2;
+        background-color: #57A2FB;
         padding: 4%;
         font-family: 'Jura', sans-serif;
         display: grid;
@@ -34,7 +34,8 @@
     #locationburron {
         display: inline;
         font-size: 2vmin;
-        margin-left: 30%;
+        margin-left: 30%; 
+
         background-color: silver;
         padding: 1%;
         border-radius: 20px;
@@ -72,7 +73,7 @@
         float: right;
         font-size: 75%;
         color: white;
-        width: 50%;
+        width: 47%;
     }
 
     .wind {
@@ -82,6 +83,10 @@
         margin-bottom: 10px;
         height: 2vmax;
         list-style-type: none;
+    }
+
+    .wind > p:last-child{
+        margin-left: auto;
     }
 
     .hh {
@@ -166,7 +171,7 @@
 
     body {
         padding: 2%;
-        background-color: #b1d3f2;
+        background-color: #57A2FB;
         font-family: 'Jura', sans-serif;
     }
 
@@ -316,13 +321,13 @@ input {
 
 .nameofothercity {
     display: inline;
-    font-size: 3vmax;
+    font-size: 3vw;
 }
 
 .graofothercity {
     display: inline;
     margin-left: 2vmax;
-    font-size: 3.5vmax;
+    font-size: 3.5vw;
     float: none;
 }
 
