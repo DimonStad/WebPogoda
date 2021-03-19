@@ -21,20 +21,21 @@
         width: 100%;
     }
 
-    #weatherhere {
+    #weather_here {
         font-size: 5vmin;
         display: inline;
     }
 
-    #currentlocation {
+    #current_location {
         font-size: 5vmin;
     }
 
 
-    #locationburron {
+    #location_burron {
         display: inline;
         font-size: 2vmin;
-        margin-left: 30%; 
+        margin-left: 23%; 
+        text-align: center;
 
         background-color: silver;
         padding: 1%;
@@ -42,7 +43,7 @@
 
     }
 
-    #locationburron:hover {
+    #location_burron:hover {
         background-color: gold;
     }
 
@@ -57,12 +58,12 @@
         background-color: gold;
         
     }
-    #currentlocationicon {
+    #current_location_icon {
         width: 8vmax;
         height: 8vmax;
     }
 
-    #currentgrad {
+    #current_grad {
         display: inline;
         font-size: 12vmax;
         margin-left: 5%;
@@ -89,6 +90,32 @@
         margin-left: auto;
     }
 
+    .details > li > p:last-child{
+        margin-left: auto;
+    }
+
+    .details > li {
+        background-color: gray;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        height: 2vmax;
+        list-style-type: none;
+    }
+
+    #contain > li {
+        background-color: gray;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        height: 2vmax;
+        list-style-type: none;
+    }
+
+    #contain > li > p:last-child{
+        margin-left: auto;
+    }
+
     .hh {
         display: inline;
         font-size: 1.5vmax;
@@ -106,7 +133,7 @@
         vertical-align: center;
     }
 
-    #mycities {
+    #my_cities {
         display: inline;
         text-align: left;
         font-size: 3vmax;
@@ -122,7 +149,7 @@
         margin-bottom: 0;
     }
 
-    #plusplus {
+    #plus_plus {
         display: inline;
         float: right;
         background-color: gray;
@@ -137,7 +164,7 @@
         background-color: gold;
     }
 
-    .otherweather {
+    .other_weather {
         display: inline;
         width: 100%;
         float: left;
@@ -155,7 +182,7 @@
         color: white;
     }
 
-    #othercities {
+    #other_cities {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -180,17 +207,17 @@
         width: 100%;
     }
 
-    #weatherhere {
+    #weather_here {
         font-size: 5vmin;
         display: inline;
     }
 
-    #currentlocation {
+    #current_location {
         font-size: 5vmin;
     }
 
 
-    #locationburron {
+    #location_burron {
         display: inline;
         font-size: 2.5vmin;
         background-color: silver;
@@ -199,7 +226,7 @@
         text-align: center;
     }
 
-    #locationburron:hover {
+    #location_burron:hover {
         background-color: gold;
     }
 
@@ -214,13 +241,13 @@
         
     }
 
-    #currentlocationicon {
+    #current_location_icon {
         width: 20vmin;
         height: 20vmin;
         margin-left: 5%;
     }
 
-    #currentgrad {
+    #current_grad {
         display: inline;
         font-size: 20vmin;
         margin-left: 20%;
@@ -261,7 +288,7 @@
         vertical-align: center;
     }
 
-    #mycities {
+    #my_cities {
         margin-top: 1.2em;
         display: inline;
         float: left;
@@ -276,7 +303,7 @@
         width: 60%;
     }
 
-    #plusplus {
+    #plus_plus {
         display: inline;
         float: right;
         background-color: gray;
@@ -287,7 +314,7 @@
         color: white;
     }
 
-    .otherweather {
+    .other_weather {
         width: 100%;
         float: left;
     }
@@ -305,7 +332,7 @@
         margin-top: 2%;
     }
 
-    #othercities {
+    #other_cities {
         display: grid;
         grid-template-columns:1fr;
     }
@@ -319,19 +346,19 @@ input {
     margin-right: 10%;
 }
 
-.nameofothercity {
+.name_of_other_city {
     display: inline;
     font-size: 3vmax;
 }
 
-.graofothercity {
+.gra_of_other_city {
     display: inline;
     margin-left: 2vmax;
     font-size: 3.5vmax;
     float: none;
 }
 
-.othercityicon {
+.other_city_icon {
     width: 3vmax;
     height: 3vmax;
     margin-left: 1vmax;
@@ -345,7 +372,7 @@ input {
     color: white;
 }
 
-#reloadicon {
+#reload_icon {
     width: 3vmax;
     height: 3vmax;
 
@@ -363,7 +390,7 @@ ul {
     padding-left: 0;
 }
 
-#addcity {
+#add_city {
     margin-top: 3em;
 }
 
