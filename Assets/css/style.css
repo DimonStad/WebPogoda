@@ -7,6 +7,7 @@
     header{
         width: 100%;
         margin: 0;
+        display: flex;
     }
 
     body {
@@ -16,14 +17,13 @@
         display: grid;
     }
 
-    #spb {
+#this_weather {
         display: block;
         width: 100%;
     }
 
-    #weather_here {
+    #spb {
         font-size: 5vmin;
-        display: inline;
     }
 
     #current_location {
@@ -31,23 +31,19 @@
     }
 
 
-    #location_burron {
-        display: inline;
+    #location_button {
         font-size: 2vmin;
-        margin-left: 23%; 
-        text-align: center;
-
+        margin-left: 30%;
         background-color: silver;
         padding: 1%;
+        height: 4em;
         border-radius: 20px;
-
     }
 
-    #location_burron:hover {
+    #location_button:hover {
         background-color: gold;
     }
 
-     
     button {
         border: none;
         outline: none;
@@ -58,14 +54,15 @@
         background-color: gold;
         
     }
+
     #current_location_icon {
-        width: 8vmax;
-        height: 8vmax;
+        width: 7vmax;
+        height: 7vmax;
     }
 
     #current_grad {
         display: inline;
-        font-size: 12vmax;
+        font-size: 8vmax;
         margin-left: 5%;
         float: none;
     }
@@ -74,46 +71,18 @@
         float: right;
         font-size: 75%;
         color: white;
-        width: 47%;
+        width: 50%;
     }
 
     .wind {
+        display: flex;
+        justify-content: space-between;
         background-color: gray;
         padding: 10px;
         border-radius: 10px;
         margin-bottom: 10px;
         height: 2vmax;
         list-style-type: none;
-    }
-
-    .wind > p:last-child{
-        margin-left: auto;
-    }
-
-    .details > li > p:last-child{
-        margin-left: auto;
-    }
-
-    .details > li {
-        background-color: gray;
-        padding: 10px;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        height: 2vmax;
-        list-style-type: none;
-    }
-
-    #contain > li {
-        background-color: gray;
-        padding: 10px;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        height: 2vmax;
-        list-style-type: none;
-    }
-
-    #contain > li > p:last-child{
-        margin-left: auto;
     }
 
     .hh {
@@ -134,50 +103,45 @@
     }
 
     #my_cities {
-        display: inline;
-        text-align: left;
-        font-size: 3vmax;
-        vertical-align: top;
-
+        font-size: 2.5vmax;
+        width: 40%;
+        margin: 0;
     }
 
     #plus {
-        display: inline;
-        float: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         font-size: 4vmin;
         width: 60%;
         margin-bottom: 0;
     }
 
-    #plus_plus {
-        display: inline;
-        float: right;
+    #plus2 {
         background-color: gray;
         border-radius: 50%;
-        width: 4vmax;
-        height: 4vmax;
+        width: 2.1em;
+        height: 2.1em;
         font-size: 1.5vmax;
         color: white;
     }
 
-    #plusplus:hover{
+     #plus2:hover{
         background-color: gold;
     }
 
-    .other_weather {
-        display: inline;
+    #otherc_ities section {
         width: 100%;
         float: left;
         margin-top: 3em;
     }
 
     .x {
-        display: inline;
         float: right;
         background-color: gray;
         border-radius: 50%;
-        width: 2.7em;
-        height: 2.7em;
+        width: 2.1em;
+        height: 2.1em;
         font-size: 1.5vmax;
         color: white;
     }
@@ -191,7 +155,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     html {
         height: 100%;
     }
@@ -202,31 +166,29 @@
         font-family: 'Jura', sans-serif;
     }
 
-    #spb {
+    #this_weather {
         display: block;
         width: 100%;
     }
 
-    #weather_here {
-        font-size: 5vmin;
-        display: inline;
+    #spb {
+        font-size: 3vmax;
     }
 
     #current_location {
-        font-size: 5vmin;
+        font-size: 3vmax;
     }
 
 
-    #location_burron {
-        display: inline;
-        font-size: 2.5vmin;
+    #location_button {
         background-color: silver;
         padding: 1%;
+        height: 5vmax;
         border-radius: 20px;
         text-align: center;
     }
 
-    #location_burron:hover {
+    #location_button:hover {
         background-color: gold;
     }
 
@@ -247,9 +209,9 @@
         margin-left: 5%;
     }
 
-    #current_grad {
+    #currentgrad {
         display: inline;
-        font-size: 20vmin;
+        font-size: 13vmin;
         margin-left: 20%;
         vertical-align: top;
         float: none;
@@ -263,17 +225,17 @@
     }
 
     .wind {
+        display: flex;
+        justify-content: space-between;
         background-color: gray;
         padding: 10px;
         border-radius: 10px;
         margin-bottom: 10px;
-        height: 4vmin;
         list-style-type: none;
     }
 
     .hh {
-        display: inline;
-        font-size: 3vmin;
+        font-size: 1.5vmax;
         float: left;
         margin: 0;
         vertical-align: center;
@@ -281,56 +243,33 @@
 
 
     p {
-        display: inline;
         margin: 0;
         float: right;
-        font-size: 3vmin;
+        font-size: 1.5vmax;
         vertical-align: center;
     }
 
     #my_cities {
-        margin-top: 1.2em;
-        display: inline;
-        float: left;
-        font-size: 5vmin;
+        width: 40%;
+        margin: 0;
+        font-size: 2.5vmax;
     }
 
     #plus {
-        margin-top: 1.2em;
-        display: inline;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         float: right;
         font-size: 4vmin;
         width: 60%;
     }
 
-    #plus_plus {
-        display: inline;
-        float: right;
-        background-color: gray;
-        border-radius: 50%;
-        width: 6vmin;
-        height: 6vmin;
-        font-size: 70%;
-        color: white;
-    }
 
-    .other_weather {
+    #other_cities section {
         width: 100%;
         float: left;
     }
 
-    .x {
-        display: inline;
-        float: right;
-  
-        background-color: gray;
-        border-radius: 50%;
-        width: 6vmin;
-        height: 6vmin;
-        font-size: 1.5vmax;
-        color: white;
-        margin-top: 2%;
-    }
 
     #other_cities {
         display: grid;
@@ -346,21 +285,20 @@ input {
     margin-right: 10%;
 }
 
+
 .name_of_other_city {
-    display: inline;
-    font-size: 3vmax;
+    font-size: 2.5vmax;
 }
 
 .gra_of_other_city {
-    display: inline;
     margin-left: 2vmax;
     font-size: 3.5vmax;
     float: none;
 }
 
 .other_city_icon {
-    width: 3vmax;
-    height: 3vmax;
+    width: 5vmax;
+    height: 5vmax;
     margin-left: 1vmax;
 }
 
@@ -372,7 +310,7 @@ input {
     color: white;
 }
 
-#reload_icon {
+#reloadicon {
     width: 3vmax;
     height: 3vmax;
 
@@ -384,15 +322,26 @@ main {
 }
 
 
-
 ul {
     margin-left: 0;
     padding-left: 0;
 }
 
 #add_city {
+    width: 100%;
+    display: flex;
     margin-top: 3em;
+    align-items: center;
+}
+
+#add {
+    font-size: 1.2vmax;
 }
 
 
 
+.classno{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
