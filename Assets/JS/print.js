@@ -14,7 +14,7 @@ function printLoader () {
 function printCurrentWeather(res) {
     let section = document.querySelector("#this_weather")
     section.querySelector("#current_location").textContent = res.name
-    section.querySelector("#current_grad").textContent = Math.ceil((res.main.temp) * 10) / 10 + "°C"
+    section.querySelector("#current_grad").textContent = Math.ceil((res.main.temp)) + "°C"
     section.querySelector("#current_location_icon").src = "image/day_"
         + res.weather[0].main.toLowerCase()
         + ".png"
@@ -45,7 +45,7 @@ function printListCities(res, count3) {
     //Определяем значения
     let template = document.querySelector("#template-othercity")
     template.content.querySelector(".gra_of_other_city").textContent
-        = Math.ceil((res.main.temp) * 10) / 10 + "°C"
+        = Math.ceil((res.main.temp)) + "°C"
     template.content.querySelector(".name_of_other_city").textContent = res.name
     template.content.querySelector(".other_city_icon").src = "image/day_"
         + res.weather[0].main.toLowerCase()
