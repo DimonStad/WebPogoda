@@ -6,6 +6,6 @@ function buttonWidth() {
         document.getElementById("location_button").innerHTML = "<img id=\"reloadicon\" " +
             "src=\"image/93638.png\">"
     } else {
-        document.getElementById("location_button").innerHTML = "Обновить геолокацию"
+        document.getElementById("location_button").innerHTML = "Обновить геолокацию";
     }
 }
