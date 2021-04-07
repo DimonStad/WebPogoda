@@ -36,7 +36,7 @@ function showLocation(position) {
 
 //Запрос погоды дефолтного города
 function notReceived() {
-    alert("Ошибка вашего местоположения, поэтому берем дефолтный город")
+    alert("Your location error, so we take the default city")
 
     let city = "Москва"
     fetchCityCurrentWeather(city)

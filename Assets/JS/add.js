@@ -6,11 +6,14 @@ async function addCity() {
             let city = document.getElementById("add").value
             let url = urlCity(city);
             res = await axios.get(url)
+            document.getElementById("add").value = "";
+            
 
+        
             //Проверка города на уже существующий город в списке
             for (let i = 1; i < window.localStorage.length; i++) {
                 if (res.data.name === window.localStorage.getItem(i)) {
-                    throw("Город уже есть")
+                    throw("The city already exists")
                 }
             }
             window.localStorage.setItem(window.localStorage.length, res.data.name)
@@ -27,6 +30,15 @@ async function addCity() {
             alert(e)
         }
     }
+}
+
+function addFavCityKeyPressListener() {
+  document.getElementById("add").addEventListener('keypress',
+      function (e) {
+        if (e.key === 'Enter') {
+          addCity();
+        }
+      });
 }
 
 //Удаление города из избранного
