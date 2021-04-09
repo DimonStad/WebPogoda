@@ -32,14 +32,7 @@ async function addCity() {
     }
 }
 
-function addEnter() {
-  document.getElementById("add").addEventListener('keypress',
-      function (e) {
-        if (e.key === 'Enter') {
-          addCity();
-        }
-      });
-}
+
 
 //Удаление города из избранного
 function deleteCity(id) {
