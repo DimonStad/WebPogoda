@@ -1,9 +1,9 @@
 function printLoader () {
     let template = document.getElementById("loader");
     for(let i = 1; i < window.localStorage.length; i++){
-        var section = document.createElement("section");
+        let section = document.createElement("section");
         section.setAttribute("id", "city" + i);
-        var clone;
+        let clone;
         clone = document.importNode(template.content, true);
         section.appendChild(clone);
         document.getElementById("other_cities").appendChild(section);
@@ -32,7 +32,7 @@ function addToList(ul, res) {
     parameters[5].textContent = res.main.pressure + " hpa";
     parameters[7].textContent = res.main.humidity + " %";
     parameters[9].textContent = "[ " + res.coord.lon + ", " + res.coord.lat + " ]";
-    var clone
+    let clone
     clone = document.importNode(template.content, true);
     ul.appendChild(clone);
 }

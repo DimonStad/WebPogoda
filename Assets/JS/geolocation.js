@@ -27,10 +27,12 @@ window.onload = async function () {
 }
 
 
+
+
 //Запрос погоды по геолокации
 function showLocation(position) {
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
     fetchLatLonCurrentWeather(lat,lon);
 }
 
