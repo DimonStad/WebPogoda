@@ -30,6 +30,7 @@ async function addCity() {
             document.getElementById("add").value = "";
 
         } catch (e) {
+            document.getElementById("add").value = "";
             alert(e)
         }
     }
