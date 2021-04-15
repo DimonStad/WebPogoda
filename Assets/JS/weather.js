@@ -1,10 +1,10 @@
 async function getData(a) {
     if (typeof a === 'string') {
-    var item = 
+    let item = 
     await fetch("https://api.openweathermap.org/data/2.5/weather?appid=d90e9570355188094b55bc4c9b6ea3e9&lang=ru&units=metric&q=" + a)
     console.log(item.json())}
     else {
-      var item =
+      let item =
        await fetch("https://api.openweathermap.org/data/2.5/weather?appid=d90e9570355188094b55bc4c9b6ea3e9&lang=ru&units=metric&lat=" + a[0] + "&lon=" + a[1] )
       console.log(item.json())
     }
